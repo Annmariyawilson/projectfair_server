@@ -5,7 +5,7 @@ const storage = multer.diskStorage({
         callback(null, './uploads')
     },
     filename: (req, file, callback) => {
-        const filename = `Image-${Date.now()}-${file.originalname}`
+        const filename = `image-${Date.now()}-${file.originalname}`
         callback(null, filename)
     }
 })

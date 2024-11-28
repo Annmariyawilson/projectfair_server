@@ -13,7 +13,16 @@ const userSchema=new mongoose.Schema({
     password:{
         type:String,
         required:true
-    }
+    },
+    github:{
+        type:String,
+    },
+    linkedln:{
+        type:String,
+    },
+    profile:{
+        type:String,
+    },
 })
 
 const users=mongoose.model('users',userSchema)

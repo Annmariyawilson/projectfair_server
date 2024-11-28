@@ -31,6 +31,7 @@ const pfServer = express();
 pfServer.use(cors());
 pfServer.use(express.json());
 pfServer.use(routes);
+pfServer.use('/uploads',express.static('./uploads'))
 
 const PORT = process.env.PORT || 3000;
 
